@@ -1,0 +1,297 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #f0fdf4, #dbeafe);
+  color: #1f2937;
+}
+
+/* Hlavička stránky */
+.hlavicka {
+  text-align: center;
+  padding: 55px 20px;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: white;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.hlavicka h1 {
+  margin: 0;
+  font-size: 42px;
+}
+
+.hlavicka p {
+  max-width: 650px;
+  margin: 12px auto 0;
+  font-size: 17px;
+}
+
+/* Hlavní rozložení */
+.obal {
+  max-width: 1200px;
+  margin: 30px auto;
+  padding: 0 18px;
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+/* Bílé panely */
+.panel {
+  width: 50%;
+  background: white;
+  border-radius: 25px;
+  padding: 25px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+}
+
+.panel h2 {
+  margin-top: 0;
+  font-size: 25px;
+  color: #14532d;
+}
+
+.popis {
+  color: #6b7280;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* Nastavení uživatele */
+.nastaveni {
+  background: #f9fafb;
+  border-left: 5px solid #22c55e;
+  padding: 18px;
+  border-radius: 18px;
+  margin-bottom: 24px;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #374151;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-top: 7px;
+  margin-bottom: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  font-size: 15px;
+  outline: none;
+  background: white;
+}
+
+input:focus,
+select:focus {
+  border-color: #22c55e;
+  box-shadow: 0 0 0 3px rgba(34, 197, 94, 0.18);
+}
+
+/* Karty aktivit */
+.karta {
+  background: white;
+  border-radius: 20px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 2px solid #e5e7eb;
+  transition: all 0.25s ease;
+}
+
+.karta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  border-color: #22c55e;
+}
+
+.karta h3 {
+  margin: 0 0 10px;
+  font-size: 23px;
+  color: #111827;
+}
+
+.karta p {
+  margin: 7px 0;
+  color: #4b5563;
+}
+
+/* Hlavní tlačítka */
+.tlacitko {
+  width: 100%;
+  border: none;
+  padding: 14px;
+  border-radius: 14px;
+  cursor: pointer;
+  background: linear-gradient(135deg, #22c55e, #16a34a);
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  margin-top: 12px;
+  transition: 0.25s;
+}
+
+.tlacitko:hover {
+  transform: scale(1.03);
+}
+
+/* Červené tlačítko */
+.smazat {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  margin-top: 16px;
+}
+
+.smazat:hover {
+  background: linear-gradient(135deg, #dc2626, #991b1b);
+}
+
+/* Deník aktivit */
+.denik {
+  min-height: 130px;
+  overflow-x: auto;
+}
+
+/* Tabulka */
+.tabulka {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 15px;
+  margin-top: 10px;
+}
+
+.tabulka thead {
+  background: #0f172a;
+  color: white;
+}
+
+.tabulka th {
+  padding: 15px;
+  text-align: center;
+}
+
+.tabulka td {
+  padding: 12px;
+  text-align: center;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.tabulka tr:nth-child(even) {
+  background: #f3f4f6;
+}
+
+.tabulka tr:hover {
+  background: #dcfce7;
+}
+
+/* Malá tlačítka v tabulce */
+.male-tlacitko {
+  border: none;
+  border-radius: 9px;
+  padding: 8px 10px;
+  cursor: pointer;
+  font-weight: bold;
+  color: white;
+  margin: 2px;
+}
+
+.upravit {
+  background: #2563eb;
+}
+
+.upravit:hover {
+  background: #1d4ed8;
+}
+
+.smazat-male {
+  background: #dc2626;
+}
+
+.smazat-male:hover {
+  background: #b91c1c;
+}
+
+/* Souhrn kalorií */
+.souhrn {
+  margin-top: 25px;
+  background: linear-gradient(135deg, #22c55e, #15803d);
+  color: white;
+  border-radius: 25px;
+  padding: 30px;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(34, 197, 94, 0.35);
+}
+
+.souhrn p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.souhrn strong {
+  display: block;
+  margin-top: 10px;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+.souhrn span {
+  display: block;
+  margin-top: 12px;
+  font-size: 16px;
+}
+
+/* Patička */
+.paticka {
+  text-align: center;
+  padding: 25px;
+  color: #6b7280;
+}
+
+/* Prázdný deník */
+.prazdny {
+  color: #6b7280;
+  background: #f9fafb;
+  padding: 14px;
+  border-radius: 12px;
+  font-style: italic;
+}
+
+/* Mobilní zobrazení */
+@media (max-width: 750px) {
+  .hlavicka {
+    padding: 35px 16px;
+  }
+
+  .hlavicka h1 {
+    font-size: 30px;
+  }
+
+  .obal {
+    flex-direction: column;
+    margin: 20px auto;
+  }
+
+  .panel {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .souhrn strong {
+    font-size: 32px;
+  }
+
+  .tabulka {
+    font-size: 14px;
+  }
+
+  .male-tlacitko {
+    width: 100%;
+    margin-top: 5px;
+  }
+}
